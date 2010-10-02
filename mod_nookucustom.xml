@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Nooku Custom module</name>
+	<author>Ercan Özkaya</author>
+	<creationDate>Oct 2010</creationDate>
+	<copyright>(C) 2010 Ercan Özkaya. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ozkayaercan@gmail.com</authorEmail>
+	<authorUrl>http://ercan.us/</authorUrl>
+	<version>0.1.0</version>
+	<description>A PoC Nooku module that gets data from the specified model and use the given template to render the sdata</description>
+	<files>
+		<filename module="mod_nookucustom">mod_nookucustom.php</filename>
+		<filename>html.php</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<params addpath="modules/mod_nookucustom/elements">
+		<param name="model" type="text" label="Model Identifier" size="80" />
+		<param name="state" type="textarea" rows="8" cols="50" label="Model States (As JSON)" />
+		<param name="template" type="textarea" rows="20" cols="50" label="Template" />
+	</params>
+
+</install>
